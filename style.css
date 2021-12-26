@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  background-color: rgb(180, 177, 177);
+  /* width: 220px; */
+  height: 100vh;
+  font-family: "Fira Sans", sans-serif;
+  transition: transform 0.3s ease-in;
+  position: absolute;
+}
+.sidebar nav {
+  padding: 30px;
+}
+.sidebar nav li {
+  list-style: none;
+  font-size: 25px;
+  padding: 22px 0;
+}
+.sidebar nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  /* background-color: yellow; */
+  width: 90vw;
+}
+
+.container {
+  display: flex;
+}
+.infoContainer {
+  /* background-color: rgb(187, 16, 221); */
+  height: 55vh;
+  width: 80vw;
+  margin: 117px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.devInfo {
+    font-size: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Source Code Pro", monospace;
+}
+.hello {
+  font-size: 3.5em;
+}
+.name {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: "Fira Sans", sans-serif;
+}
+.about {
+  font-size: 2.5em;
+}
+.moreabout {
+  font-size: 2.2em;
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 20px;
+}
+.buttons {
+  margin-top: 2.2em;
+  /* font-size: 10px; */
+}
+.btn {
+  padding: 9px 12px;
+  border-radius: 25px;
+  color: white;
+  background-color: blueviolet;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.btn-sm {
+  font-size: 13px;
+}
+.btn:hover {
+  background-color: white;
+  color: blueviolet;
+}
+.devPic img {
+  height: 55vh;
+}
+.contactForm {
+  font-family: "Fira Sans", sans-serif;
+  padding: 0 34px;
+  /* padding-top: 144px; */
+  margin: 0 88px;
+}
+.contactForm h1 {
+  font-family: "Source Code Pro", monospace;
+  padding: 12px;
+  /* text-align: center; */
+}
+.contactForm form div {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+.contactForm form div input {
+  /* width: 16vw; */
+  border-radius: 15px;
+  font-size: 15px;
+  margin: 6px 0 0 0;
+  padding: 5px;
+}
+.contactForm form {
+    margin: 0 40px;
+}
+
+#emailHelp {
+  font-size: 10px;
+  color: midnightblue;
+  margin: 0 10px;
+}
+#form-check {
+  flex-direction: row;
+}
+#form-check input {
+  width: 20px;
+  margin: 3px 1px;
+}
+.blogItem {
+  font-family: "Fira Sans", sans-serif;
+  margin: 20px;
+}
+.blogContainer h1 {
+  font-family: "Fira Sans", sans-serif;
+  margin: 10px 88px;
+}
+.blogItem p {
+  font-family: "Source Code Pro", monospace;
+}
+h1 {
+  font-family: "Fira Sans", sans-serif;
+}
+p {
+  font-family: "Source Code Pro", monospace;
+}
+.intro{
+    margin: 10px 88px;
+}
+.intro h2 {
+  font-family: "Fira Sans", sans-serif;
+  margin: 12px 12px;
+}
+.intro p {
+  font-family: "Source Code Pro", monospace;
+  margin: 12px 12px;
+}
+.skillContainer {
+  padding: 12px;
+}
+.skillitem {
+  display: flex;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 800;
+}
+.skill {
+  width: 240px;
+  height: 25px;
+  background-color: blueviolet;
+  border-radius: 25px;
+  border: 2px solid black;
+}
+.hundred {
+  width: 250px;
+  background-color: blueviolet;
+}
+.fifty {
+  width: 125px;
+  background-color: aqua;
+}
+.t5 {
+  width: 75px;
+  background-color: mediumslateblue;
+}
+.sidebarGo {
+    transform: translate(-220px, 0px);
+    position: absolute;
+  }
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.cross{
+    margin-left: 145px;
+    margin-top: 5px;
+}
+@media (max-width: 1351px) {
+  /* * {
+    /* background-color: rgb(238, 89, 133); */
+  /* }
+
+  .sidebar {
+    transform: translate(-220px, 0px);
+    position: absolute;
+  } */ 
+  .buttons{
+      font-size: 10px;
+  }
+  .devInfo{
+      font-size: 10px;
+  }
+  .devPic{
+      display: none;
+  }
+  .intro, .blogContainer, .contactForm{
+      margin: 50px 8px;
+  }
+}
